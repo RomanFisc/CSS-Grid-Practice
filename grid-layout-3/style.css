@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer";
+  }
+  
+  .container div {
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+  }
+
+  .logo {
+    text-align: left;
+  }
+  
+  .header {
+    background-color: #393f4d;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+  
+  .menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+  }
+
+  .menu {
+    align-self: center;
+  }
+
+
+  .menu ul,
+  .menu li {
+    font-size: 16px;
+  }
+  
+  .menu li {
+    justify-self: center;
+  }
+
+  .sidebar {
+    background-color: #C50208;
+    grid-area: sidebar;
+    display: grid;
+    gap: 50px
+  }
+  
+  .sidebar .photo {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 10px;
+  }
+  
+  
+  .sidebar .side-content {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .nav {
+    background-color: #C50208;
+    grid-area: nav;
+  }
+  
+  .nav ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .article {
+    background-color: #bccbde;
+    grid-area: article;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+  }
+  
+  .article .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    height: 200px;
+    align-self: center;
+  }
+  
+  .card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  .card .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #393f4d;
+    grid-area: footer;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer p {
+    font-size: 13px;
+    font-weight: normal;
+  }
